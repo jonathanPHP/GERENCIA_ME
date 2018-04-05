@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="model.Endereco" project="GERENCIA_ME" file="/GERENCIA_ME/src/model/Endereco.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="556" y="15"/>    
+    <position height="-1" width="-1" x="557" y="17"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -64,58 +64,75 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="8">    
+  <enumeration id="8" language="java" name="model.TipoPagamento" project="GERENCIA_ME" 
+    file="/GERENCIA_ME/src/model/TipoPagamento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="642" y="541"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="9">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="9" name="servicos"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+      <attribute id="10" name="servicos"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="11">    
+  <association id="12">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="13" name="tipo"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="hospede"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+      <attribute id="16" name="hospede"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="14">    
+  <association id="18">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="15" name="endereco"/>      
-      <multiplicity id="16" minimum="0" maximum="1"/>    
+      <attribute id="19" name="endereco"/>      
+      <multiplicity id="20" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="17">    
+  <association id="21">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="18" name="hospede"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
+      <attribute id="22" name="hospede"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="20">    
+  <association id="24">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="21" name="hospedagem"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
+      <attribute id="25" name="hospedagem"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="23">    
+  <association id="27">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="24" name="reserva"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
+      <attribute id="28" name="reserva"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="26">    
+  <association id="30">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="27" name="quarto"/>      
-      <multiplicity id="28" minimum="0" maximum="1"/>    
+      <attribute id="31" name="quarto"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
