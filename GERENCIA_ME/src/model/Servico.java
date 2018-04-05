@@ -6,15 +6,15 @@ public class Servico {
 
 	private String servico;
 	private String descricao;
-	private Double preco;
+	private Double valor;
 	private Date data;
 	
 	public Servico() {}
 
-	public Servico(String servico, String descricao, Double preco, Date data) {
+	public Servico(String servico, String descricao, Double valor, Date data) {
 		this.setServico(servico);
 		this.setDescricao(descricao);
-		this.setPreco(preco);
+		this.setValor(valor);
 		this.setData(data);
 	}
 	
@@ -34,12 +34,12 @@ public class Servico {
 		this.descricao = descricao;
 	}
 
-	public Double getPreco() {
-		return preco;
+	public Double getValor() {
+		return valor;
 	}
 
-	public void setPreco(Double preco) {
-		this.preco = preco;
+	public void setValor(Double valor) {
+		this.valor = valor;
 	}
 
 	public Date getData() {
