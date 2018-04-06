@@ -8,11 +8,11 @@ public class Reserva {
 	private Quarto quarto;
 	private Date chegada;
 	private Date saida;
-	private Integer status;
+	private StatusReserva status;
 	
 	public Reserva(){}
 	
-	public Reserva(Hospede hospede, Quarto quarto, Date chegada, Date saida, Integer status){
+	public Reserva(Hospede hospede, Quarto quarto, Date chegada, Date saida, StatusReserva status){
 		this.setHospede(hospede);
 		this.setQuarto(quarto);
 		this.setChegada(chegada);
@@ -52,11 +52,11 @@ public class Reserva {
 		this.saida = saida;
 	}
 
-	public Integer getStatus() {
+	public StatusReserva getStatus() {
 		return status;
 	}
 
-	public void setStatus(Integer status) {
+	public void setStatus(StatusReserva status) {
 		this.status = status;
 	}
 }

@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Hospedagem {
 
-	private Hospede hospede;
 	private Reserva reserva;
 	private List<Servico> servicos = new ArrayList<Servico>();
 	private Date checkin;
@@ -14,21 +13,12 @@ public class Hospedagem {
 	
 	public Hospedagem() {}
 	
-	public Hospedagem(Hospede hospede, Reserva reserva, Date checkin, Date checkout, List<Servico> servicos) {
-		this.setHospede(hospede);
+	public Hospedagem(Reserva reserva, Date checkin, Date checkout, List<Servico> servicos) {
 		this.setReserva(reserva);
 		this.setCheckin(checkin);
 		this.setCheckout(checkout);
 		this.setServicos(servicos);
 		
-	}
-
-	public Hospede getHospede() {
-		return hospede;
-	}
-
-	public void setHospede(Hospede hospede) {
-		this.hospede = hospede;
 	}
 
 	public Reserva getReserva() {
