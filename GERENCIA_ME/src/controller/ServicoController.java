@@ -1,14 +1,16 @@
 package controller;
 
-import model.Sevico;
+import model.Servico;
 
-public class ControllerServico {
+public class ServicoController {
 	private Servico servico;
 	
 	public void createServico(Servico servico) {
 		
 	}
 	public Servico readServico(int id) {
+		
+		return servico;
 
 	}
 	public void updateServico(Servico servico) {

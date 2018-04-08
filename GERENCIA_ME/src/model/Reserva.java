@@ -9,15 +9,17 @@ public class Reserva {
 	private Date chegada;
 	private Date saida;
 	private StatusReserva status;
+	private Double valor;
 	
 	public Reserva(){}
 	
-	public Reserva(Hospede hospede, Quarto quarto, Date chegada, Date saida, StatusReserva status){
+	public Reserva(Hospede hospede, Quarto quarto, Date chegada, Date saida, StatusReserva status, Double valor){
 		this.setHospede(hospede);
 		this.setQuarto(quarto);
 		this.setChegada(chegada);
 		this.setSaida(saida);
 		this.setStatus(status);
+		this.setValor(valor);
 	}
 	
 	
@@ -58,5 +60,13 @@ public class Reserva {
 
 	public void setStatus(StatusReserva status) {
 		this.status = status;
+	}
+
+	public Double getValor() {
+		return valor;
+	}
+
+	public void setValor(Double valor) {
+		this.valor = valor;
 	}
 }

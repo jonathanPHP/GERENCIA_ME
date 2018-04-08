@@ -2,13 +2,15 @@ package controller;
 
 import model.Reserva;
 
-public class ControllerReserva {
+public class ReservaController {
 	private Reserva reserva;
 	
 	public void createReserva(Reserva reserva) {
 		
 	}
 	public Reserva readReserva(int id) {
+		
+		return reserva;
 
 	}
 	public void updateReserva(Reserva reserva) {

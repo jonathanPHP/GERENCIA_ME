@@ -52,5 +52,9 @@ public class Hospedagem {
 	public void setServicos(List<Servico> servicos) {
 		this.servicos = servicos;
 	}
+	
+	public void addServicos(Servico servico){
+		servicos.add(servico);
+	}
 
 }

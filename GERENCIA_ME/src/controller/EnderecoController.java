@@ -2,7 +2,7 @@ package controller;
 
 import model.Endereco;
 
-public class ControllerEndereco {
+public class EnderecoController {
 	
 	private Endereco endereco;
 	
@@ -10,6 +10,8 @@ public class ControllerEndereco {
 		
 	}
 	public Endereco readEndereco(int id) {
+		
+		return endereco;
 		
 	}
 	public void updateEndereco(Endereco endereco) {
